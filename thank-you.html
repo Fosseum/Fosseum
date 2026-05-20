@@ -122,15 +122,15 @@
 
     /* ── VIDEO EMBED ── */
     .video-wrap {
-      position: relative;
-      width: 100%; max-width: 760px;
-      padding: 56.25% 0 0 0;
+      width: 100%; max-width: 760px; margin: 0 auto;
       border-radius: var(--r-card);
       overflow: hidden;
-      background: #000;
       border: 1px solid rgba(255,255,255,0.08);
     }
-    .video-wrap iframe {
+    .video-ratio {
+      position: relative; padding-top: 56.25%;
+    }
+    .video-ratio iframe {
       position: absolute; top: 0; left: 0;
       width: 100%; height: 100%;
       border: none;
@@ -167,8 +167,7 @@
 <!-- ══════════════ NAV ══════════════ -->
 <nav class="nav" role="navigation" aria-label="Main">
   <div class="wrap">
-    <a href="index.html" class="nav-logo" aria-label="Fosseum home">
-      <img src="fosseum-mark.png" alt="" class="nav-logo-mark" aria-hidden="true">
+    <a href="index.html" aria-label="Fosseum home">
       <span class="nav-logo-name">Fosseum</span>
     </a>
     <a href="index.html" class="nav-back" aria-label="Back to main site">
@@ -200,13 +199,15 @@
       <p class="video-cta">Watch this brief video for what to do next&nbsp;👇</p>
 
       <div class="video-wrap">
-        <iframe
-          src="https://player.vimeo.com/video/1193311542?badge=0&autopause=0&player_id=0&app_id=58479"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          title="Confirm your Strategy Call (IMPORTANT)">
-        </iframe>
+        <div class="video-ratio">
+          <iframe
+            src="https://player.vimeo.com/video/1193311542?badge=0&autopause=0&player_id=0&app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Confirm your Strategy Call (IMPORTANT)">
+          </iframe>
+        </div>
       </div>
       <script src="https://player.vimeo.com/api/player.js"></script>
 
