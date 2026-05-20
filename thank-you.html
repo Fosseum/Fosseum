@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Call Is Confirmed | Fosseum</title>
   <meta name="description" content="Your strategy call with Fosseum has been confirmed. Check your email for details.">
+  <link rel="icon" type="image/png" href="fosseum-mark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500&family=Syne+Mono&display=swap" rel="stylesheet">
@@ -88,15 +89,15 @@
       font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;
       color: var(--white); margin-bottom: 28px;
     }
-    .confirm-heading .green-dot { color: var(--green); }
+    .confirm-heading .green-line { color: var(--green); display: block; }
 
     .confirm-sub {
       font-size: 17px; font-weight: 300; line-height: 1.75;
       color: rgba(255,255,255,0.55);
       max-width: 560px; margin: 0 auto 40px;
     }
-    .confirm-sub strong {
-      color: var(--white); font-weight: 500;
+    .confirm-sub .green-text {
+      color: var(--green); font-weight: 500;
     }
 
     /* ── DIVIDER ── */
@@ -119,14 +120,14 @@
     .video-wrap {
       position: relative;
       width: 100%; max-width: 760px;
-      aspect-ratio: 16 / 9;
+      padding: 56.25% 0 0 0;
       border-radius: var(--r-card);
       overflow: hidden;
-      background: rgba(255,255,255,0.04);
+      background: #000;
       border: 1px solid rgba(255,255,255,0.08);
     }
     .video-wrap iframe {
-      position: absolute; inset: 0;
+      position: absolute; top: 0; left: 0;
       width: 100%; height: 100%;
       border: none;
     }
@@ -183,11 +184,11 @@
       <span class="eyebrow">Strategy Call Confirmed</span>
 
       <h1 class="confirm-heading">
-        Congratulations! Your Strategy Call<br>Has Been Scheduled<span class="green-dot">.</span>
+        Congratulations! Your Strategy Call<span class="green-line">Has Been Scheduled.</span>
       </h1>
 
       <p class="confirm-sub">
-        I have sent you confirmation of your call's time and date via email &amp; text, please make sure that you <strong>put this in your calendar right now.</strong>
+        I have sent you confirmation of your call's time and date via email &amp; text, please make sure that you <span class="green-text">put this in your calendar right now.</span>
       </p>
 
       <hr class="confirm-divider">
@@ -195,14 +196,15 @@
       <p class="video-cta">Watch this brief video for what to do next&nbsp;👇</p>
 
       <div class="video-wrap">
-        <!-- PASTE YOUR VIMEO/YOUTUBE EMBED SRC URL BELOW -->
         <iframe
-          src="https://player.vimeo.com/video/YOUR_VIDEO_ID?autoplay=0&title=0&byline=0&portrait=0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-          title="What to do next">
+          src="https://player.vimeo.com/video/1193311542?badge=0&autopause=0&player_id=0&app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Confirm your Strategy Call (IMPORTANT)">
         </iframe>
       </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
 
     </div>
   </div>
