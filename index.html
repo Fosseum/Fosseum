@@ -4,32 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fosseum</title>
-  <meta name="description" content="15 qualified conversations with CISOs and VPs of Security at funded SaaS companies. In 30 days. Guaranteed. Done for you compound outreach for cybersecurity recruiting agencies.">
+  <meta name="description" content="The Fosseum Recruiter Growth Program. 21 qualified conversations with CISOs and VPs of Security in 30 days. Guaranteed. Built for cybersecurity recruiting agencies.">
   <link rel="icon" type="image/png" href="fosseum-mark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&family=Syne+Mono&display=swap" rel="stylesheet">
   <style>
     :root {
-      --black:       #0A0A0A;
+      --black:       #0A0C14;
       --white:       #FFFFFF;
-      --off-white:   #F5F4F1;
-      --green:       #00C87A;
-      --green-dim:   rgba(0,200,122,0.1);
-      --green-border:rgba(0,200,122,0.2);
-      --gray-dark:   #4A4A48;
-      --gray-mid:    #8A8A88;
-      --gray-light:  #E2E1DE;
+      --off-white:   #F4F4F9;
+      --green:       #6366F1;
+      --green-dim:   rgba(99,102,241,0.10);
+      --green-border:rgba(99,102,241,0.22);
+      --gray-dark:   #4A4A57;
+      --gray-mid:    #8A8A9A;
+      --gray-light:  #E2E1EE;
       --nav-h:       64px;
       --max-w:       1200px;
-      --r-btn:       3px;
-      --r-card:      6px;
-      --r-panel:     8px;
+      --r-btn:       10px;
+      --r-card:      16px;
+      --r-panel:     22px;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); -webkit-font-smoothing: antialiased; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--black); -webkit-font-smoothing: antialiased; }
     a { text-decoration: none; }
 
     .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 48px; }
@@ -41,15 +41,15 @@
       color: var(--green); display: block; margin-bottom: 16px;
     }
     .hero .eyebrow { font-size: 9px; letter-spacing: 0.18em; margin-bottom: 20px; }
-    .h1 { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(48px,6vw,80px); letter-spacing: -0.03em; line-height: 1; }
-    .h2 { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: clamp(34px,4vw,52px); letter-spacing: -0.02em; line-height: 1.05; }
+    .h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: clamp(48px,6vw,80px); letter-spacing: -0.03em; line-height: 1; }
+    .h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: clamp(34px,4vw,52px); letter-spacing: -0.02em; line-height: 1.05; }
     .body-lg { font-size: 17px; font-weight: 300; line-height: 1.75; }
 
     /* ── BUTTONS ── */
     .btn {
       display: inline-flex; align-items: center; gap: 6px;
-      font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase;
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
       padding: 14px 28px; border-radius: var(--r-btn); border: none; cursor: pointer;
       transition: transform 200ms cubic-bezier(0.34,1.56,0.64,1), box-shadow 200ms ease, background 200ms ease, color 200ms ease;
       position: relative; overflow: hidden;
@@ -57,10 +57,10 @@
     .btn:hover { transform: translateY(-2px); }
     .btn:active { transform: translateY(0); transition-duration: 80ms; }
     .btn:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
-    .btn-green { background: var(--green); color: var(--black); }
-    .btn-green:hover { box-shadow: 0 4px 12px rgba(0,200,122,0.2), 0 8px 24px rgba(0,200,122,0.18); }
+    .btn-green { background: var(--green); color: var(--white); }
+    .btn-green:hover { box-shadow: 0 4px 12px rgba(99,102,241,0.28), 0 8px 24px rgba(99,102,241,0.18); }
     .btn-black { background: var(--black); color: var(--white); }
-    .btn-black:hover { background: var(--green); color: var(--black); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .btn-black:hover { background: var(--green); color: var(--white); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
     .btn-ghost { background: transparent; color: var(--gray-dark); border: 1px solid var(--black); }
     .btn-ghost:hover { background: var(--black); color: var(--white); box-shadow: none; }
     .btn-ghost-light { background: transparent; color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.2); }
@@ -70,7 +70,6 @@
     /* ── SCROLL REVEAL ── */
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity 600ms cubic-bezier(0.16,1,0.3,1), transform 600ms cubic-bezier(0.16,1,0.3,1); }
     .reveal.in { opacity: 1; transform: none; }
-    /* Staggered siblings */
     .for-grid .reveal:nth-child(2) { transition-delay: 60ms; }
     .for-grid .reveal:nth-child(3) { transition-delay: 120ms; }
     .for-grid .reveal:nth-child(4) { transition-delay: 180ms; }
@@ -94,8 +93,7 @@
     .nav .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 
     .nav-logo { display: flex; align-items: center; gap: 10px; }
-    .nav-logo-mark { width: 24px; height: 24px; flex-shrink: 0; object-fit: contain; }
-    .nav-logo-name { font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 600; color: var(--black); letter-spacing: -0.02em; }
+    .nav-logo-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 700; color: var(--black); letter-spacing: -0.02em; }
 
     .nav-links { display: flex; align-items: center; gap: 32px; }
     .nav-links a { font-size: 14px; color: var(--gray-dark); transition: color 200ms; border-radius: 2px; }
@@ -125,8 +123,8 @@
     .hero-grid-bg {
       position: absolute; inset: 0; pointer-events: none;
       background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
       background-size: 48px 48px;
     }
     /* SVG noise grain overlay on dark sections */
@@ -154,7 +152,7 @@
     .hero-radar { display: flex; align-items: center; justify-content: center; position: relative; }
     .hero-radar::before {
       content: ''; position: absolute; inset: -40px; border-radius: 50%; pointer-events: none;
-      background: radial-gradient(circle at center, rgba(0,200,122,0.09) 0%, transparent 68%);
+      background: radial-gradient(circle at center, rgba(99,102,241,0.12) 0%, transparent 68%);
     }
 
     /* ═══════════════════════════════════
@@ -165,7 +163,7 @@
     .ticker:hover .ticker-track { animation-play-state: paused; }
     .ticker-item {
       font-family: 'Syne Mono', monospace; font-size: 12px; letter-spacing: 0.1em;
-      color: var(--black); white-space: nowrap; padding: 0 44px;
+      color: var(--white); white-space: nowrap; padding: 0 44px;
     }
     @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
@@ -180,11 +178,11 @@
     .stats-row { display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid var(--gray-light); border-radius: var(--r-card); overflow: hidden; background: var(--white); }
     .stat { padding: 22px 16px; text-align: center; border-right: 1px solid var(--gray-light); }
     .stat:last-child { border-right: none; }
-    .stat-num { font-family: 'Outfit', sans-serif; font-size: 34px; font-weight: 700; color: var(--black); letter-spacing: -0.03em; line-height: 1; margin-bottom: 6px; }
+    .stat-num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 700; color: var(--black); letter-spacing: -0.03em; line-height: 1; margin-bottom: 6px; }
     .stat-lbl { font-family: 'Syne Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-mid); display: block; }
 
     .problem-quote {
-      font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700;
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 20px; font-weight: 700;
       letter-spacing: -0.02em; line-height: 1.45; color: var(--black);
       border-left: 3px solid var(--green); padding-left: 20px; margin-bottom: 32px;
     }
@@ -197,14 +195,14 @@
       will-change: transform;
     }
     .pcard:hover { transform: translateX(5px); box-shadow: 2px 4px 16px rgba(0,0,0,0.06); }
-    .pcard-h { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); letter-spacing: -0.01em; margin-bottom: 8px; }
+    .pcard-h { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); letter-spacing: -0.01em; margin-bottom: 8px; }
     .pcard-p { font-size: 13px; color: var(--gray-dark); line-height: 1.7; }
 
     /* ═══════════════════════════════════
        WHO IT'S FOR
     ═══════════════════════════════════ */
     .for-who { background: var(--white); padding: 96px 0; }
-    .for-who-hdr { text-align: center; max-width: 580px; margin: 0 auto 52px; }
+    .for-who-hdr { text-align: center; max-width: 600px; margin: 0 auto 52px; }
     .for-who-sub { color: var(--gray-dark); margin-top: 16px; }
     .for-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 28px; }
     .fcard {
@@ -213,16 +211,16 @@
       transition: transform 280ms cubic-bezier(0.34,1.56,0.64,1), border-color 200ms ease, box-shadow 280ms ease;
       will-change: transform;
     }
-    .fcard:hover { transform: translateY(-5px); border-color: var(--green); box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 10px 24px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,200,122,0.06); }
+    .fcard:hover { transform: translateY(-5px); border-color: var(--green); box-shadow: 0 2px 4px rgba(0,0,0,0.04), 0 10px 24px rgba(0,0,0,0.08), 0 0 0 1px rgba(99,102,241,0.06); }
     .fcard-icon { width: 22px; height: 22px; margin-bottom: 14px; display: block; flex-shrink: 0; }
-    .fcard-h { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); letter-spacing: -0.01em; margin-bottom: 10px; }
+    .fcard-h { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); letter-spacing: -0.01em; margin-bottom: 10px; }
     .fcard-p { font-size: 13px; color: var(--gray-dark); line-height: 1.7; }
     .disqualifier {
       background: #FFF8F8; border: 1px solid #FECACA; border-radius: var(--r-panel);
       padding: 22px 26px; display: flex; gap: 16px; align-items: flex-start;
     }
     .disq-icon { flex-shrink: 0; margin-top: 2px; }
-    .disq-h { font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 700; color: #991B1B; letter-spacing: -0.01em; margin-bottom: 6px; }
+    .disq-h { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 700; color: #991B1B; letter-spacing: -0.01em; margin-bottom: 6px; }
     .disq-p { font-size: 13px; color: var(--gray-dark); line-height: 1.7; }
 
     /* ═══════════════════════════════════
@@ -239,14 +237,14 @@
       transition: transform 280ms cubic-bezier(0.34,1.56,0.64,1), border-color 200ms ease, box-shadow 280ms ease;
       will-change: transform;
     }
-    .step:hover { transform: translateY(-5px); border-color: rgba(0,200,122,0.35); box-shadow: 0 0 0 1px rgba(0,200,122,0.07), 0 12px 32px rgba(0,0,0,0.35); }
+    .step:hover { transform: translateY(-5px); border-color: rgba(99,102,241,0.35); box-shadow: 0 0 0 1px rgba(99,102,241,0.07), 0 12px 32px rgba(0,0,0,0.35); }
     .step-num { font-family: 'Syne Mono', monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--green); text-transform: uppercase; display: block; margin-bottom: 24px; }
-    .step-h { font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; margin-bottom: 14px; }
+    .step-h { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; margin-bottom: 14px; }
     .step-p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.75; margin-bottom: 24px; }
     .step-tag {
       display: inline-block; font-family: 'Syne Mono', monospace; font-size: 9px;
       letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 10px;
-      border-radius: 2px; background: var(--green-dim); border: 1px solid var(--green-border); color: var(--green);
+      border-radius: 6px; background: var(--green-dim); border: 1px solid var(--green-border); color: var(--green);
     }
 
     /* ═══════════════════════════════════
@@ -255,11 +253,11 @@
     .offer { background: var(--off-white); padding: 96px 0; }
     .offer-hdr { margin-bottom: 40px; }
     .offer-card { background: var(--white); border-radius: var(--r-panel); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06), 0 16px 48px rgba(0,0,0,0.08); overflow: hidden; }
-    .offer-strip { height: 4px; background: linear-gradient(90deg, var(--green) 0%, rgba(0,200,122,0.6) 100%); }
+    .offer-strip { height: 4px; background: linear-gradient(90deg, var(--green) 0%, rgba(99,102,241,0.6) 100%); }
     .offer-body { display: grid; grid-template-columns: 1fr 320px; }
 
     .offer-left { padding: 48px; border-right: 1px solid var(--gray-light); }
-    .offer-h { font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.35; margin-bottom: 28px; }
+    .offer-h { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; font-weight: 700; color: var(--black); letter-spacing: -0.02em; line-height: 1.35; margin-bottom: 28px; }
     .offer-h strong { color: var(--green); }
     .checklist { display: flex; flex-direction: column; gap: 13px; }
     .check { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--gray-dark); line-height: 1.65; }
@@ -273,9 +271,9 @@
     .offer-right { background: var(--black); padding: 48px 36px; display: flex; flex-direction: column; gap: 24px; }
     .metric-box { text-align: center; padding: 32px 20px; border: 1px solid rgba(255,255,255,0.08); border-radius: var(--r-card); }
     .metric-lbl { font-family: 'Syne Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.3); display: block; margin-bottom: 12px; }
-    .metric-num { font-family: 'Outfit', sans-serif; font-size: 80px; font-weight: 700; letter-spacing: -0.03em; color: var(--green); line-height: 1; margin-bottom: 12px; }
+    .metric-num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 80px; font-weight: 700; letter-spacing: -0.03em; color: var(--green); line-height: 1; margin-bottom: 12px; }
     .metric-sub { font-family: 'Syne Mono', monospace; font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.9; }
-    .guarantee-box { border: 1px solid rgba(0,200,122,0.25); border-radius: var(--r-card); padding: 22px; }
+    .guarantee-box { border: 1px solid rgba(99,102,241,0.25); border-radius: var(--r-card); padding: 22px; }
     .guarantee-lbl { font-family: 'Syne Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--green); display: block; margin-bottom: 10px; }
     .guarantee-p { font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.75; }
     .offer-cta-wrap { text-align: center; }
@@ -300,11 +298,10 @@
     .roi-table td { padding: 18px 24px; border-bottom: 1px solid var(--gray-light); font-size: 14px; color: var(--gray-dark); vertical-align: top; }
     .roi-table tbody tr:last-child td { border-bottom: none; }
     .roi-table tbody tr:hover td { background: var(--off-white); }
-    .td-label { font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 700; color: var(--black); white-space: nowrap; }
-    .td-revenue { font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; color: var(--black); letter-spacing: -0.02em; }
+    .td-label { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 700; color: var(--black); white-space: nowrap; }
+    .td-revenue { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 17px; font-weight: 700; color: var(--black); letter-spacing: -0.02em; }
     .td-formula { font-family: 'Syne Mono', monospace; font-size: 11px; color: var(--gray-mid); line-height: 1.7; }
-    .td-roi { font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; color: var(--green); letter-spacing: -0.02em; }
-    .td-ltv { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: var(--gray-dark); }
+    .td-ltv { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; color: var(--gray-dark); }
     .note-box {
       margin-top: 20px; background: var(--green-dim); border: 1px solid var(--green-border);
       border-left: 3px solid var(--green);
@@ -313,7 +310,7 @@
     .note-tag {
       font-family: 'Syne Mono', monospace; font-size: 10px; letter-spacing: 0.14em;
       text-transform: uppercase; color: var(--green); background: var(--green-dim);
-      border: 1px solid var(--green-border); padding: 4px 8px; border-radius: 2px;
+      border: 1px solid var(--green-border); padding: 4px 8px; border-radius: 6px;
       white-space: nowrap; flex-shrink: 0; margin-top: 2px;
     }
     .note-p { font-size: 13px; color: var(--black); line-height: 1.7; font-weight: 500; }
@@ -331,14 +328,14 @@
       border-radius: var(--r-card); overflow: hidden;
       transition: border-color 250ms ease, box-shadow 250ms ease;
     }
-    .faq-item.open { border-color: rgba(0,200,122,0.3); box-shadow: 0 4px 16px rgba(0,200,122,0.05); }
+    .faq-item.open { border-color: rgba(99,102,241,0.3); box-shadow: 0 4px 16px rgba(99,102,241,0.06); }
     .faq-btn {
       width: 100%; background: none; border: none; padding: 20px 22px;
       display: flex; justify-content: space-between; align-items: center; gap: 16px;
       cursor: pointer; text-align: left; transition: background 200ms ease;
     }
     .faq-btn:hover { background: rgba(0,0,0,0.015); }
-    .faq-q { font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); letter-spacing: -0.01em; line-height: 1.4; }
+    .faq-q { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); letter-spacing: -0.01em; line-height: 1.4; }
     .faq-arrow { font-family: 'Syne Mono', monospace; font-size: 20px; color: var(--green); flex-shrink: 0; transition: transform 300ms cubic-bezier(0.34,1.56,0.64,1); line-height: 1; }
     .faq-item.open .faq-arrow { transform: rotate(45deg); }
     .faq-a {
@@ -355,7 +352,7 @@
     .final-cta { background: var(--black); padding: 96px 0; text-align: center; position: relative; overflow: hidden; }
     .cta-rings { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
     .cta-ring {
-      position: absolute; border-radius: 50%; border: 1px solid rgba(0,200,122,0.07);
+      position: absolute; border-radius: 50%; border: 1px solid rgba(99,102,241,0.08);
       animation: ring-breathe 5s ease-in-out infinite;
     }
     .cta-ring:nth-child(2) { animation-delay: 1s; }
@@ -366,13 +363,14 @@
       0%, 100% { opacity: 0.5; transform: scale(1); }
       50%       { opacity: 1;   transform: scale(1.015); }
     }
-    .final-cta-inner { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+    .final-cta-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
     .final-cta .h2 { color: var(--white); margin-bottom: 20px; }
     .final-cta .h2 .green { color: var(--green); }
-    .final-cta-sub { color: rgba(255,255,255,0.55); margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .final-cta-sub { color: rgba(255,255,255,0.55); margin-bottom: 14px; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .cta-note { font-size: 14px; color: rgba(255,255,255,0.30); margin-bottom: 28px; max-width: 460px; margin-left: auto; margin-right: auto; line-height: 1.7; }
     .cta-caller { margin-top: 32px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
     .cta-caller-title { font-family: 'Syne Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.38); }
-    .cta-caller-action { font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 600; color: var(--green); letter-spacing: -0.02em; }
+    .cta-caller-action { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 600; color: var(--green); letter-spacing: -0.02em; }
 
     /* ═══════════════════════════════════
        FOOTER
@@ -380,7 +378,7 @@
     .footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.06); padding: 36px 0; }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
     .footer-brand { display: flex; flex-direction: column; gap: 14px; }
-    .footer-logo-name { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 600; color: var(--white); letter-spacing: -0.02em; }
+    .footer-logo-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; }
     .footer-links { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
     .footer-links a { font-size: 13px; color: rgba(255,255,255,0.35); transition: color 200ms; border-radius: 2px; }
     .footer-links a:hover { color: var(--white); }
@@ -401,7 +399,7 @@
       .hero { padding: calc(var(--nav-h) + 56px) 0 72px; }
       .hero-inner { grid-template-columns: 1fr; gap: 48px; }
       .hero-radar { order: -1; }
-      #radar { width: 280px !important; height: 280px !important; }
+      #globe { width: 280px !important; height: 280px !important; }
 
       .problem-cols { grid-template-columns: 1fr; gap: 48px; }
       .for-grid { grid-template-columns: repeat(2,1fr); }
@@ -472,18 +470,19 @@
       <div class="hero-copy">
         <span class="eyebrow">For cybersecurity recruiting agencies</span>
         <h1 class="h1 hero-h1">
-          We Build<br>
-          <span class="green">The Radar</span><br>
-          For You
+          You Spot Talent<br>
+          Worldwide.<br>
+          Why Not Do<br>
+          <span class="green">Business Worldwide?</span>
         </h1>
         <p class="body-lg hero-sub">
-          <span style="display:block">Most cybersecurity recruiting agencies are flying without one.</span>
-          <span style="display:block">They only see what flies directly in front of them.</span>
+          <span style="display:block">Most cybersecurity recruiting agencies rely on their network to get clients.</span>
+          <span style="display:block">That network is powerful. But it has a ceiling. The ceiling is geographic.</span>
         </p>
         <p class="hero-quote">
-          Every funded SaaS company with an open CISO role or 3+ active DevSecOps postings
-          is a blip on a radar screen. Visible in real time, tracked before any competitor
-          agency knows it exists.
+          You already know how to find the right person anywhere in the world.
+          The same skill that fills a role in Stockholm, Singapore, or São Paulo
+          can fill your pipeline with clients in those same cities.
         </p>
         <div class="hero-ctas">
           <a href="book-your-strategy-call.html" class="btn btn-green">Book Your Free Call →</a>
@@ -491,7 +490,7 @@
         </div>
       </div>
       <div class="hero-radar" aria-hidden="true">
-        <canvas id="radar" width="420" height="420"></canvas>
+        <canvas id="globe" width="420" height="420"></canvas>
       </div>
     </div>
   </div>
@@ -502,16 +501,16 @@
   <div class="ticker-track">
     <span class="ticker-item">◆ 470,000+ open cybersecurity roles in the US right now</span>
     <span class="ticker-item">◆ Average security role open for 43 days</span>
-    <span class="ticker-item">◆ 80% of agency pipeline from referrals</span>
-    <span class="ticker-item">◆ Average CISO placement fee: $55,000+</span>
     <span class="ticker-item">◆ 3.5M unfilled cybersecurity roles globally</span>
-    <span class="ticker-item">◆ 73% of top candidates are passive, not actively applying</span>
+    <span class="ticker-item">◆ Average CISO placement fee: $55,000+</span>
+    <span class="ticker-item">◆ 80% of agency pipeline still comes from referrals</span>
+    <span class="ticker-item">◆ Your next client is in a city you have never worked in</span>
     <span class="ticker-item">◆ 470,000+ open cybersecurity roles in the US right now</span>
     <span class="ticker-item">◆ Average security role open for 43 days</span>
-    <span class="ticker-item">◆ 80% of agency pipeline from referrals</span>
-    <span class="ticker-item">◆ Average CISO placement fee: $55,000+</span>
     <span class="ticker-item">◆ 3.5M unfilled cybersecurity roles globally</span>
-    <span class="ticker-item">◆ 73% of top candidates are passive, not actively applying</span>
+    <span class="ticker-item">◆ Average CISO placement fee: $55,000+</span>
+    <span class="ticker-item">◆ 80% of agency pipeline still comes from referrals</span>
+    <span class="ticker-item">◆ Your next client is in a city you have never worked in</span>
   </div>
 </div>
 
@@ -521,8 +520,8 @@
     <div class="problem-cols">
       <div class="reveal">
         <span class="eyebrow">The Problem</span>
-        <h2 class="h2 problem-h2">Flying Without Radar</h2>
-        <p class="body-lg problem-sub">You know exactly how to fill a CISO role. You know how to track down specialized talent. But you keep relying on referrals. Without a predictable pipeline, you can find the candidates. You just keep missing the open roles before someone else gets there first.</p>
+        <h2 class="h2 problem-h2">Your Network Has a Ceiling.</h2>
+        <p class="body-lg problem-sub">You have been in this space for years. You know everyone in your market. But do you know everyone in the next city? Next country? Next continent? Your referral network is your foundation. But it is also your limit.</p>
         <div class="stats-row">
           <div class="stat">
             <div class="stat-num">80%</div>
@@ -539,19 +538,19 @@
         </div>
       </div>
       <div class="reveal">
-        <p class="problem-quote">"The agencies landing the best SaaS clients aren't the most experienced ones. They're the ones who show up in the right place at the right moment."</p>
+        <p class="problem-quote">"The agencies landing the best clients overseas are not the ones with the best network. They are the ones who showed up first in an inbox that nobody else thought to reach."</p>
         <div class="pcards">
           <div class="pcard">
-            <div class="pcard-h">Referral dependency is a single point of failure</div>
-            <p class="pcard-p">When your anchor clients pause hiring, there is no outbound engine to turn on. No predictable pipeline. Just waiting and hoping the phone rings.</p>
+            <div class="pcard-h">Referral dependency is a geographic ceiling, not a foundation</div>
+            <p class="pcard-p">When your known network slows down, there is no engine to turn on. You are waiting for the right person to remember you. In a market you already saturated.</p>
           </div>
           <div class="pcard">
-            <div class="pcard-h">Competitors get there before you do</div>
-            <p class="pcard-p">A Series B SaaS company posts their first CISO search. You see it on day 9. Three other agencies reached out on day 1. The relationship is already built.</p>
+            <div class="pcard-h">Your best potential clients do not know you exist</div>
+            <p class="pcard-p">A fintech firm in New York or a healthcare system in London is hiring a CISO right now. They have three active security role postings. They have a budget. They have no idea you exist.</p>
           </div>
           <div class="pcard">
-            <div class="pcard-h">Outbound feels like it would damage your brand</div>
-            <p class="pcard-p">Generic blast emails do damage your brand. But personalized, research driven outreach that shows you already understand their security stack, their recent hires and their exact gap positions you as the expert before you have even spoken. Done right, outreach does not undermine your reputation. It builds it.</p>
+            <div class="pcard-h">You spot talent globally but sell locally</div>
+            <p class="pcard-p">You place candidates in cities you have never visited. You know how to work across borders when the role demands it. That same reach has never been turned toward finding clients. Yet.</p>
           </div>
         </div>
       </div>
@@ -565,45 +564,45 @@
     <div class="for-who-hdr reveal">
       <span class="eyebrow">Who It's For</span>
       <h2 class="h2">Built for Cybersecurity Recruiting Agencies</h2>
-      <p class="body-lg for-who-sub">We work exclusively with cybersecurity recruiting agencies. One system. Built entirely just for you.</p>
+      <p class="body-lg for-who-sub">We work exclusively with cybersecurity recruiting agencies. One niche. One system. It does not matter whether your clients are in tech, finance, or healthcare. The approach is built entirely around your market.</p>
     </div>
     <div class="for-grid">
       <div class="fcard reveal">
-        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11 2L4 5.5V11c0 4.4 3.1 8.5 7 9.5 3.9-1 7-5.1 7-9.5V5.5L11 2Z" stroke="#00C87A" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 11l2 2 4-4" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11 2L4 5.5V11c0 4.4 3.1 8.5 7 9.5 3.9-1 7-5.1 7-9.5V5.5L11 2Z" stroke="#6366F1" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 11l2 2 4-4" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <div class="fcard-h">Cybersecurity only agencies</div>
         <p class="fcard-p">AppSec, DevSecOps, Cloud Security, GRC, CISO level. Not general IT. Not tech and security. The real specialists.</p>
       </div>
       <div class="fcard reveal">
-        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 15a4 4 0 01-.5-8A5.5 5.5 0 0116.5 9H17a3 3 0 010 6H6Z" stroke="#00C87A" stroke-width="1.5" stroke-linejoin="round"/></svg>
-        <div class="fcard-h">SaaS and cloud focused</div>
-        <p class="fcard-p">Your ideal clients are funded SaaS companies and cloud native businesses actively building security teams right now.</p>
+        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="7" width="5" height="13" rx="1" stroke="#6366F1" stroke-width="1.5"/><rect x="8.5" y="3" width="5" height="17" rx="1" stroke="#6366F1" stroke-width="1.5"/><rect x="15" y="10" width="5" height="10" rx="1" stroke="#6366F1" stroke-width="1.5"/></svg>
+        <div class="fcard-h">Tech, finance, and healthcare clients</div>
+        <p class="fcard-p">Your clients are companies with active cybersecurity headcount across SaaS, cloud, banking, insurance, health systems, and fintech. If they have 3+ open security roles, they qualify.</p>
       </div>
       <div class="fcard reveal">
-        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="7" r="3.5" stroke="#00C87A" stroke-width="1.5"/><path d="M2 19c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round"/><path d="M15 5c1.7.4 3 1.9 3 3.7 0 1.7-1.1 3.2-2.8 3.7" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round"/><path d="M18 19c0-2.8-1.5-5.2-3.8-6.4" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="7" r="3.5" stroke="#6366F1" stroke-width="1.5"/><path d="M2 19c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round"/><path d="M15 5c1.7.4 3 1.9 3 3.7 0 1.7-1.1 3.2-2.8 3.7" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round"/><path d="M18 19c0-2.8-1.5-5.2-3.8-6.4" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round"/></svg>
         <div class="fcard-h">Boutique agencies</div>
         <p class="fcard-p">You are simultaneously the recruiter, the BD person, and the account manager. You need a system that runs without consuming all of you.</p>
       </div>
       <div class="fcard reveal">
-        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 4l-2 3H6a3 3 0 000 6h1" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 18l2-3h8a3 3 0 000-6h-1" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M16 4l-2 3H6a3 3 0 000 6h1" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 18l2-3h8a3 3 0 000-6h-1" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <div class="fcard-h">Referral dependent right now</div>
         <p class="fcard-p">Most of your new business comes from people who already know you. You want to change that without sacrificing your brand or your time.</p>
       </div>
       <div class="fcard reveal">
-        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="11" cy="12" r="7.5" stroke="#00C87A" stroke-width="1.5"/><path d="M11 8.5V12l2.5 2.5" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 2.5h5" stroke="#00C87A" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="11" cy="12" r="7.5" stroke="#6366F1" stroke-width="1.5"/><path d="M11 8.5V12l2.5 2.5" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 2.5h5" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round"/></svg>
         <div class="fcard-h">No time for BD during delivery</div>
         <p class="fcard-p">When searches are running, BD stops. When they close, pipeline is empty. You are on a treadmill and you know it.</p>
       </div>
       <div class="fcard reveal">
-        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="11" cy="11" r="8.5" stroke="#00C87A" stroke-width="1.5"/><circle cx="11" cy="11" r="4.5" stroke="#00C87A" stroke-width="1.5"/><circle cx="11" cy="11" r="1.5" fill="#00C87A"/></svg>
-        <div class="fcard-h">Quality over volume</div>
-        <p class="fcard-p">You don't want 50 vague leads. You want 15 conversations with CISOs at funded companies with 3 open security roles right now.</p>
+        <svg class="fcard-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="11" cy="11" r="8.5" stroke="#6366F1" stroke-width="1.5"/><path d="M2.5 11h17M11 2.5c-2 2.8-3.5 5.3-3.5 8.5S9 16.7 11 19.5M11 2.5c2 2.8 3.5 5.3 3.5 8.5S13 16.7 11 19.5" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="fcard-h">Looking beyond your current geography</div>
+        <p class="fcard-p">You have been working the same region for years. You know there is more out there. Other cities, other countries, other markets. You just have no system to reach them.</p>
       </div>
     </div>
     <div class="disqualifier reveal">
       <svg class="disq-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="7.5" stroke="#991B1B" stroke-width="1.4"/><path d="M6 6l6 6M12 6l-6 6" stroke="#991B1B" stroke-width="1.4" stroke-linecap="round"/></svg>
       <div>
         <div class="disq-h">This is not for you if</div>
-        <p class="disq-p">You are a generalist staffing agency, you work exclusively with government or cleared candidates, or you do not believe a predictable pipeline can even exist in your market.</p>
+        <p class="disq-p">You are a generalist staffing firm or you recruit outside of cybersecurity entirely.</p>
       </div>
     </div>
   </div>
@@ -627,7 +626,7 @@
       <div class="step reveal">
         <span class="step-num">Step 02</span>
         <div class="step-h">List & Signal Build</div>
-        <p class="step-p">We identify funded SaaS and cloud companies with 3+ active cybersecurity role postings. Every contact is verified. CISO, VP Security, VP Engineering. No HR. No gatekeepers.</p>
+        <p class="step-p">We identify companies across tech, finance, and healthcare with 3+ active cybersecurity role postings. Regardless of geography. Every contact is verified: CISO, VP Security, VP Engineering. No HR. No gatekeepers.</p>
         <span class="step-tag">Precision Targeting</span>
       </div>
       <div class="step reveal">
@@ -657,25 +656,26 @@
       <div class="offer-strip"></div>
       <div class="offer-body">
         <div class="offer-left">
-          <p class="offer-h">A fully installed, done for you compound outreach system that puts cybersecurity recruiting agencies in front of <strong>CISOs and VPs of Security</strong> at funded SaaS and cloud companies with 3+ active role postings.</p>
+          <p class="offer-h">The Fosseum Recruiter Growth Program gets cybersecurity recruiting agencies in front of <strong>CISOs and VPs of Security</strong> at companies with 3+ active cybersecurity role postings. 21 qualified conversations in 30 days. Guaranteed.</p>
           <div class="checklist">
             <div class="check"><span class="check-icon">✓</span><span>Decision makers only. CISO, VP Security, VP Engineering. Never HR.</span></div>
-            <div class="check"><span class="check-icon">✓</span><span>Funded SaaS and cloud companies actively building security teams right now</span></div>
+            <div class="check"><span class="check-icon">✓</span><span>Companies across tech, finance, and healthcare actively building security teams right now</span></div>
             <div class="check"><span class="check-icon">✓</span><span>3+ active cybersecurity role postings confirmed before outreach begins</span></div>
             <div class="check"><span class="check-icon">✓</span><span>Personalized Loom video on their actual website. Not a generic blast.</span></div>
             <div class="check"><span class="check-icon">✓</span><span>We handle copy, targeting, sending and follow up. Fully done for you.</span></div>
-            <div class="check"><span class="check-icon">✓</span><span>15 qualified conversations in 30 days. If we miss, we work for free until we reach 30.</span></div>
+            <div class="check"><span class="check-icon">✓</span><span>We manage all replies and book qualified prospects directly onto your calendar. You just show up to the call.</span></div>
+            <div class="check"><span class="check-icon">✓</span><span>21 guaranteed qualified conversations in 30 days. If we do not get there, we do not stop.</span></div>
           </div>
         </div>
         <div class="offer-right">
           <div class="metric-box">
             <span class="metric-lbl">Guaranteed</span>
-            <div class="metric-num">15</div>
+            <div class="metric-num">21</div>
             <p class="metric-sub">Qualified conversations with CISOs and VPs of Security. In 30 days.</p>
           </div>
           <div class="guarantee-box">
             <span class="guarantee-lbl">The Guarantee</span>
-            <p class="guarantee-p">Every conversation verified against our qualification criteria. If we do not book 15 qualified conversations in 30 days, we keep working at no additional cost until we reach 30.</p>
+            <p class="guarantee-p">Every conversation verified against our qualification criteria. If we do not book 21 qualified conversations in 30 days, we keep working at no additional cost until we do.</p>
           </div>
           <div class="offer-cta-wrap">
             <a href="book-your-strategy-call.html" class="btn btn-green">Get Started →</a>
@@ -692,7 +692,7 @@
     <div class="math-intro reveal">
       <span class="eyebrow">The Math</span>
       <h2 class="h2">Return on Investment</h2>
-      <p class="body-lg math-intro-p" style="margin-top:16px">Average cybersecurity placement fee in SaaS and cloud: <strong>$44,000</strong>. Every scenario starts with 15 qualified conversations. The variable is your close rate.</p>
+      <p class="body-lg math-intro-p" style="margin-top:16px">Average cybersecurity placement fee: <strong>$44,000</strong>. Every scenario starts with 21 qualified conversations. The variable is your close rate.</p>
     </div>
     <div class="roi-wrap reveal">
       <table class="roi-table" aria-label="ROI projections by close rate">
@@ -707,34 +707,28 @@
         <tbody>
           <tr>
             <td class="td-label">Immediate Revenue</td>
-            <td class="td-revenue">$92,400</td>
-            <td class="td-revenue">$184,800</td>
-            <td class="td-revenue">$396,000</td>
+            <td class="td-revenue">$123,200</td>
+            <td class="td-revenue">$277,200</td>
+            <td class="td-revenue">$528,000</td>
           </tr>
           <tr>
             <td class="td-label">Formula</td>
-            <td class="td-formula">15×20% = 3 clients<br>×1 placement×70%×$44K</td>
-            <td class="td-formula">15×30% = 4 clients<br>×1.5 placements×70%×$44K</td>
-            <td class="td-formula">15×40% = 6 clients<br>×2 placements×75%×$44K</td>
-          </tr>
-          <tr>
-            <td class="td-label">Your Return</td>
-            <td class="td-roi">26×</td>
-            <td class="td-roi">52×</td>
-            <td class="td-roi">112×</td>
+            <td class="td-formula">21×20% = 4 clients<br>×1 placement×70%×$44K</td>
+            <td class="td-formula">21×30% = 6 clients<br>×1.5 placements×70%×$44K</td>
+            <td class="td-formula">21×40% = 8 clients<br>×2 placements×75%×$44K</td>
           </tr>
           <tr>
             <td class="td-label">18 Month LTV</td>
-            <td class="td-ltv">$323,400</td>
-            <td class="td-ltv">$492,800</td>
-            <td class="td-ltv">$990,000</td>
+            <td class="td-ltv">$432,000</td>
+            <td class="td-ltv">$739,200</td>
+            <td class="td-ltv">$1,320,000</td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="note-box reveal">
       <span class="note-tag">Note</span>
-      <p class="note-p">The number we use in every conversation: the pessimistic case. 3 new clients, $92,400 in 90 days from a single campaign. One placement covers the entire engagement many times over.</p>
+      <p class="note-p">The pessimistic case. 4 new clients and $123,200 in the first 90 days. From a single 30-day campaign.</p>
     </div>
   </div>
 </section>
@@ -758,10 +752,10 @@
         </div>
         <div class="faq-item">
           <button class="faq-btn" aria-expanded="false">
-            <span class="faq-q">What if I do not get 15 conversations?</span>
+            <span class="faq-q">What if I do not get 21 conversations?</span>
             <span class="faq-arrow" aria-hidden="true">+</span>
           </button>
-          <div class="faq-a">If we do not hit 15 qualified conversations in 30 days, we do not stop. We keep working at no additional cost until we reach 30 booked conversations. The risk is ours. Not yours.</div>
+          <div class="faq-a">If we do not hit 21 qualified conversations in 30 days, we do not stop. We keep working at no additional cost until we do. The risk is ours. Not yours.</div>
         </div>
         <div class="faq-item">
           <button class="faq-btn" aria-expanded="false">
@@ -782,14 +776,14 @@
             <span class="faq-q">How do you qualify the conversations?</span>
             <span class="faq-arrow" aria-hidden="true">+</span>
           </button>
-          <div class="faq-a">Every conversation must meet four criteria: (1) CISO, VP Security, VP Engineering, or CTO. Never HR. (2) Funded SaaS or cloud company. (3) 3+ active cybersecurity role postings confirmed. (4) Genuine expressed interest. If it does not meet all four, it does not count toward the guarantee.</div>
+          <div class="faq-a">Every conversation must meet four criteria: (1) CISO, VP Security, VP Engineering, or CTO. Never HR. (2) Company with confirmed budget and active cybersecurity headcount. (3) 2 or more active cybersecurity role postings confirmed. (4) Genuine expressed interest. If it does not meet all four, it does not count toward the guarantee.</div>
         </div>
         <div class="faq-item">
           <button class="faq-btn" aria-expanded="false">
-            <span class="faq-q">How long before the first conversation lands?</span>
+            <span class="faq-q">Do you work with agencies outside the United States?</span>
             <span class="faq-arrow" aria-hidden="true">+</span>
           </button>
-          <div class="faq-a">Inbox warmup takes 14 days and cannot be shortened. That is non-negotiable infrastructure that protects your sender reputation and ensures deliverability from day one of sending. The first emails go live at day 14. From that point, most clients see their first qualified reply within 7 to 10 days. The full 30-day guarantee window runs from onboarding, not from the first send.</div>
+          <div class="faq-a">Yes. The system is built for geographic expansion by design. Whether you are based in New York or Amsterdam and want clients in Singapore or Toronto, the outreach infrastructure works across time zones and markets. That is exactly the point.</div>
         </div>
       </div>
     </div>
@@ -808,8 +802,9 @@
   <div class="wrap">
     <div class="final-cta-inner reveal">
       <span class="eyebrow">Ready</span>
-      <h2 class="h2">Let's get <span class="green">started.</span></h2>
-      <p class="body-lg final-cta-sub">15 qualified conversations with CISOs and VPs of Security at funded SaaS companies. In 30 days. Miss the target and we keep working at no cost until we reach 30.</p>
+      <h2 class="h2">Let's Open You a<br><span class="green">New Market.</span></h2>
+      <p class="body-lg final-cta-sub">21 qualified conversations with CISOs and VPs of Security. 30 days. Guaranteed.</p>
+      <p class="cta-note">In cities and markets where nobody knows your name yet.</p>
       <a href="book-your-strategy-call.html" class="btn btn-green btn-lg">Book Your Free Strategy Call</a>
       <div class="cta-caller">
         <span class="cta-caller-title">Vasilis Mousellis, Founder and CEO of Fosseum, on the call personally.</span>
@@ -847,118 +842,216 @@
 </footer>
 
 <script>
-/* ── RADAR ANIMATION ── */
+/* ── GLOBE ANIMATION ── */
 (function () {
-  const canvas = document.getElementById('radar');
+  var canvas = document.getElementById('globe');
   if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  const W = 420, H = 420, CX = W / 2, CY = H / 2, R = W / 2;
-  canvas.width = W; canvas.height = H;
+  var ctx = canvas.getContext('2d');
+  var W = 420, H = 420, CX = W/2, CY = H/2, R = W/2 - 2;
+  var rotY = 0;
+  var frame = 0;
 
-  const SPEED = 0.018;
-  const TRAIL = Math.PI * 0.6;
-  let angle = -Math.PI / 2;
+  var CITIES = [
+    [40.71,-74.01],[51.51,-0.13],[43.65,-79.38],[50.11,8.68],
+    [1.35,103.82],[-23.55,-46.63],[25.20,55.27],[-33.87,151.21],
+    [41.88,-87.63],[52.37,4.90],[47.38,8.54],[32.08,34.78],
+    [35.68,139.69],[37.57,126.98],[-1.29,36.82],[19.08,72.88],
+    [59.33,18.07],[48.86,2.35],[40.42,-3.70],[-26.20,28.04],
+    [19.43,-99.13],[52.23,21.01]
+  ];
 
-  const blips = Array.from({ length: 10 }, () => {
-    const dist = (0.18 + Math.random() * 0.65) * R * 0.9;
-    const a = Math.random() * Math.PI * 2;
-    return { x: CX + Math.cos(a) * dist, y: CY + Math.sin(a) * dist, a, opacity: 0, size: 2 + Math.random() * 2.5 };
-  });
+  function project(lat, lon) {
+    var phi = (90 - lat) * Math.PI / 180;
+    var theta = lon * Math.PI / 180 + rotY;
+    var x = Math.sin(phi) * Math.cos(theta);
+    var y = Math.cos(phi);
+    var z = Math.sin(phi) * Math.sin(theta);
+    return { sx: CX + x * R, sy: CY - y * R, z: z };
+  }
 
-  function norm(a) { return ((a % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2); }
+  function cityVec(city) {
+    var phi = (90 - city[0]) * Math.PI / 180;
+    var theta = city[1] * Math.PI / 180 + rotY;
+    return [
+      Math.sin(phi) * Math.cos(theta),
+      Math.cos(phi),
+      Math.sin(phi) * Math.sin(theta)
+    ];
+  }
+
+  function slerp(a, b, t) {
+    var d = Math.max(-1, Math.min(1, a[0]*b[0] + a[1]*b[1] + a[2]*b[2]));
+    var omega = Math.acos(d);
+    var sinO = Math.sin(omega);
+    if (sinO < 0.0001) return [a[0], a[1], a[2]];
+    var s0 = Math.sin((1 - t) * omega) / sinO;
+    var s1 = Math.sin(t * omega) / sinO;
+    return [s0*a[0]+s1*b[0], s0*a[1]+s1*b[1], s0*a[2]+s1*b[2]];
+  }
+
+  var arcs = [
+    { fi: 0, ti: 1, prog: 0, op: 0, phase: 'fading', hold: 0 },
+    { fi: 2, ti: 3, prog: 0, op: 0, phase: 'fading', hold: 0 },
+    { fi: 4, ti: 5, prog: 0, op: 0, phase: 'fading', hold: 0 }
+  ];
+
+  function visibleCities() {
+    var vis = [];
+    for (var i = 0; i < CITIES.length; i++) {
+      if (project(CITIES[i][0], CITIES[i][1]).z > 0.15) vis.push(i);
+    }
+    return vis;
+  }
+
+  function pickArc(idx) {
+    var vis = visibleCities();
+    if (vis.length < 2) return;
+    var used = [];
+    for (var j = 0; j < arcs.length; j++) {
+      if (j !== idx) { used.push(arcs[j].fi); used.push(arcs[j].ti); }
+    }
+    vis.sort(function () { return Math.random() - 0.5; });
+    for (var a = 0; a < vis.length; a++) {
+      for (var b = 0; b < vis.length; b++) {
+        if (a === b) continue;
+        if (used.indexOf(vis[a]) === -1 && used.indexOf(vis[b]) === -1) {
+          arcs[idx].fi = vis[a]; arcs[idx].ti = vis[b];
+          arcs[idx].prog = 0; arcs[idx].op = 1;
+          arcs[idx].phase = 'drawing'; arcs[idx].hold = 0;
+          return;
+        }
+      }
+    }
+    arcs[idx].fi = vis[0]; arcs[idx].ti = vis[1 % vis.length];
+    arcs[idx].prog = 0; arcs[idx].op = 1;
+    arcs[idx].phase = 'drawing'; arcs[idx].hold = 0;
+  }
+
+  function drawArcObj(a) {
+    var vA = cityVec(CITIES[a.fi]);
+    var vB = cityVec(CITIES[a.ti]);
+    var steps = 60;
+    var endS = Math.round(steps * a.prog);
+    ctx.beginPath();
+    var mv = false;
+    for (var i = 0; i <= endS; i++) {
+      var pt = slerp(vA, vB, i / steps);
+      if (pt[2] < 0) { mv = false; continue; }
+      if (!mv) { ctx.moveTo(CX + pt[0]*R, CY - pt[1]*R); mv = true; }
+      else { ctx.lineTo(CX + pt[0]*R, CY - pt[1]*R); }
+    }
+    ctx.strokeStyle = 'rgba(99,102,241,' + (a.op * 0.68) + ')';
+    ctx.lineWidth = 1.4;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+    if (endS > 0 && endS <= steps) {
+      var head = slerp(vA, vB, Math.min(endS / steps, 1));
+      if (head[2] > 0) {
+        ctx.beginPath();
+        ctx.arc(CX + head[0]*R, CY - head[1]*R, 2.5, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(99,102,241,' + a.op + ')';
+        ctx.fill();
+      }
+    }
+  }
+
+  function drawGrid() {
+    ctx.strokeStyle = 'rgba(99,102,241,0.10)';
+    ctx.lineWidth = 0.8;
+    var latLines = [-60, -30, 0, 30, 60];
+    for (var li = 0; li < latLines.length; li++) {
+      ctx.beginPath();
+      var mv1 = false;
+      for (var lo1 = -180; lo1 <= 182; lo1 += 3) {
+        var p1 = project(latLines[li], lo1);
+        if (p1.z < 0) { mv1 = false; continue; }
+        if (!mv1) { ctx.moveTo(p1.sx, p1.sy); mv1 = true; } else { ctx.lineTo(p1.sx, p1.sy); }
+      }
+      ctx.stroke();
+    }
+    for (var lo2 = 0; lo2 < 360; lo2 += 30) {
+      ctx.beginPath();
+      var mv2 = false;
+      for (var la = -90; la <= 90; la += 3) {
+        var p2 = project(la, lo2);
+        if (p2.z < 0) { mv2 = false; continue; }
+        if (!mv2) { ctx.moveTo(p2.sx, p2.sy); mv2 = true; } else { ctx.lineTo(p2.sx, p2.sy); }
+      }
+      ctx.stroke();
+    }
+  }
 
   function draw() {
     ctx.clearRect(0, 0, W, H);
-
-    /* clip circle */
     ctx.save();
     ctx.beginPath();
-    ctx.arc(CX, CY, R, 0, Math.PI * 2);
+    ctx.arc(CX, CY, R, 0, Math.PI*2);
     ctx.clip();
-
-    /* bg */
-    ctx.fillStyle = '#0A0A0A';
+    ctx.fillStyle = '#0A0C14';
     ctx.fill();
+    drawGrid();
 
-    /* rings */
-    [0.25, 0.5, 0.75, 0.95].forEach(t => {
-      ctx.beginPath();
-      ctx.arc(CX, CY, t * R, 0, Math.PI * 2);
-      ctx.strokeStyle = 'rgba(0,200,122,0.08)';
-      ctx.lineWidth = 1;
-      ctx.stroke();
-    });
-
-    /* crosshairs */
-    ctx.strokeStyle = 'rgba(0,200,122,0.05)';
-    ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(CX, CY - R * 0.95); ctx.lineTo(CX, CY + R * 0.95); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(CX - R * 0.95, CY); ctx.lineTo(CX + R * 0.95, CY); ctx.stroke();
-
-    /* sweep trail */
-    const segs = 60;
-    for (let i = 0; i < segs; i++) {
-      const t = i / segs;
-      const a0 = angle - TRAIL * (1 - t);
-      const a1 = angle - TRAIL * (1 - (i + 1) / segs);
-      ctx.beginPath();
-      ctx.moveTo(CX, CY);
-      ctx.arc(CX, CY, R * 0.95, a0, a1);
-      ctx.closePath();
-      ctx.fillStyle = 'rgba(0,200,122,' + (t * 0.14) + ')';
-      ctx.fill();
+    for (var ai = 0; ai < arcs.length; ai++) {
+      if (arcs[ai].op > 0) drawArcObj(arcs[ai]);
     }
 
-    /* sweep arm */
-    ctx.beginPath();
-    ctx.moveTo(CX, CY);
-    ctx.lineTo(CX + Math.cos(angle) * R * 0.95, CY + Math.sin(angle) * R * 0.95);
-    ctx.strokeStyle = '#00C87A';
-    ctx.lineWidth = 1.5;
-    ctx.stroke();
-
-    /* blips */
-    const na = norm(angle);
-    blips.forEach(function (b) {
-      const diff = norm(na - b.a);
-      if (diff < 0.18) { b.opacity = Math.min(1, b.opacity + 0.6); }
-      else { b.opacity = Math.max(0, b.opacity - 0.004); }
-      if (b.opacity < 0.02) return;
-      if (b.opacity > 0.25) {
-        ctx.beginPath();
-        ctx.arc(b.x, b.y, b.size * 4, 0, Math.PI * 2);
-        ctx.strokeStyle = 'rgba(0,200,122,' + (b.opacity * 0.15) + ')';
-        ctx.lineWidth = 1;
-        ctx.stroke();
-      }
+    for (var ci = 0; ci < CITIES.length; ci++) {
+      var cp = project(CITIES[ci][0], CITIES[ci][1]);
+      if (cp.z < 0.05) continue;
+      var op = Math.min(1, (cp.z - 0.05) * 4);
+      var pulse = 0.5 + 0.5 * Math.sin(frame * 0.04 + ci * 1.3);
       ctx.beginPath();
-      ctx.arc(b.x, b.y, b.size, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0,200,122,' + b.opacity + ')';
+      ctx.arc(cp.sx, cp.sy, 11, 0, Math.PI*2);
+      ctx.strokeStyle = 'rgba(99,102,241,' + (op * pulse * 0.10) + ')';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(cp.sx, cp.sy, 6, 0, Math.PI*2);
+      ctx.strokeStyle = 'rgba(99,102,241,' + (op * 0.22) + ')';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(cp.sx, cp.sy, 3, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(99,102,241,' + (op * 0.90) + ')';
       ctx.fill();
-    });
-
+    }
     ctx.restore();
 
-    /* border */
     ctx.beginPath();
-    ctx.arc(CX, CY, R - 1, 0, Math.PI * 2);
-    ctx.strokeStyle = 'rgba(0,200,122,0.15)';
+    ctx.arc(CX, CY, R, 0, Math.PI*2);
+    ctx.strokeStyle = 'rgba(99,102,241,0.18)';
     ctx.lineWidth = 1.5;
     ctx.stroke();
-
-    /* center dot */
     ctx.save();
-    ctx.shadowColor = '#00C87A';
-    ctx.shadowBlur = 10;
+    ctx.shadowColor = '#6366F1';
+    ctx.shadowBlur = 8;
     ctx.beginPath();
-    ctx.arc(CX, CY, 3, 0, Math.PI * 2);
-    ctx.fillStyle = '#00C87A';
+    ctx.arc(CX, CY, 2.5, 0, Math.PI*2);
+    ctx.fillStyle = '#6366F1';
     ctx.fill();
     ctx.restore();
 
-    angle += SPEED;
+    for (var ai2 = 0; ai2 < arcs.length; ai2++) {
+      var a = arcs[ai2];
+      if (a.phase === 'drawing') {
+        a.prog += 1 / 90;
+        if (a.prog >= 1) { a.prog = 1; a.phase = 'hold'; }
+      } else if (a.phase === 'hold') {
+        if (++a.hold >= 55) a.phase = 'fading';
+      } else {
+        a.op -= 1 / 35;
+        if (a.op <= 0) { a.op = 0; pickArc(ai2); }
+      }
+    }
+
+    frame++;
+    rotY += 0.004;
     requestAnimationFrame(draw);
   }
+
+  pickArc(0);
+  pickArc(1); arcs[1].prog = 0.38;
+  pickArc(2); arcs[2].prog = 0.72;
   draw();
 })();
 
@@ -1010,9 +1103,9 @@ var observer = new IntersectionObserver(function (entries) {
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(function (el) { observer.observe(el); });
 
-/* ── RADAR RESPONSIVE RESIZE ── */
+/* ── GLOBE RESPONSIVE RESIZE ── */
 (function () {
-  var canvas = document.getElementById('radar');
+  var canvas = document.getElementById('globe');
   if (!canvas) return;
   function resize() {
     if (window.innerWidth <= 600) { canvas.style.width = '260px'; canvas.style.height = '260px'; }
