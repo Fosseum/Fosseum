@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your 1:1 Growth Session</title>
+  <meta name="description" content="Book a free 1:1 Growth Session with Fosseum. We'll map your appointment and close-rate targets and tell you honestly whether it's a fit.">
+  <link rel="icon" type="image/png" href="logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&family=Syne+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:        #0A0D14;
+      --white:        #FFFFFF;
+      --off-white:    #F5F8FC;
+      --blue:         #36B2F7;
+      --blue-dim:     rgba(54,178,247,0.10);
+      --blue-border:  rgba(54,178,247,0.24);
+      --cyan:         #00FFFF;
+      --gray-dark:    #454B58;
+      --gray-mid:     #838A99;
+      --gray-light:   #E4E9F2;
+      --nav-h:        64px;
+      --max-w:        1200px;
+      --r-card:       16px;
+      --r-panel:      22px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--black); -webkit-font-smoothing: antialiased; min-height: 100vh; position: relative; }
+    body::before {
+      content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 45% 40% at 88% 0%, rgba(0,255,255,0.16), transparent 70%),
+        radial-gradient(ellipse 50% 45% at 0% 55%, rgba(54,178,247,0.13), transparent 70%),
+        radial-gradient(ellipse 42% 38% at 92% 100%, rgba(0,255,255,0.12), transparent 70%),
+        linear-gradient(rgba(10,13,20,0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(10,13,20,0.045) 1px, transparent 1px);
+      background-size: auto, auto, auto, 44px 44px, 44px 44px;
+    }
+    .nav, .page-hero, .calendly-section, .info-section, .footer { position: relative; z-index: 1; }
+    a { text-decoration: none; }
+    .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 48px; }
+
+    /* ── LOGO MARK ── */
+    .logo-mark { width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0; display: block; box-shadow: 0 2px 8px rgba(18,87,208,0.28); }
+    .logo-mark img { width: 100%; height: 100%; display: block; border-radius: inherit; object-fit: cover; }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      height: var(--nav-h);
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .nav .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo-name {
+      font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 700;
+      color: var(--black); letter-spacing: -0.02em;
+    }
+    .nav-back {
+      font-family: 'Syne Mono', monospace; font-size: 11px; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--gray-mid);
+      display: flex; align-items: center; gap: 7px;
+      transition: color 200ms;
+    }
+    .nav-back:hover { color: var(--blue); }
+    .nav-back svg { width: 12px; height: 12px; }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      padding: calc(var(--nav-h) + 80px) 0 64px;
+      overflow: hidden;
+    }
+    .page-hero .wrap { max-width: 760px; }
+
+    .eyebrow {
+      font-family: 'Syne Mono', monospace;
+      font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--blue); display: block; margin-bottom: 18px;
+    }
+    .page-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: clamp(40px, 5.5vw, 68px);
+      font-weight: 700; letter-spacing: -0.03em; line-height: 1.05;
+      color: var(--black); margin-bottom: 20px;
+    }
+    .page-title em {
+      font-style: italic; font-weight: 300; color: var(--blue);
+    }
+    .page-sub {
+      font-size: 17px; font-weight: 300; line-height: 1.75;
+      color: var(--gray-dark); max-width: 520px;
+    }
+
+    /* ── CALENDLY SECTION ── */
+    .calendly-section { padding: 0 0 80px; }
+    .calendly-shell { max-width: 900px; margin: 0 auto; padding: 0 48px; }
+    .calendly-frame {
+      border-radius: var(--r-panel); border: 1px solid var(--blue-border);
+      background: linear-gradient(160deg, rgba(0,255,255,0.22) 0%, rgba(54,178,247,0.16) 100%), #EAFBFF;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06), 0 20px 56px rgba(54,178,247,0.16);
+      padding: 32px;
+    }
+    .calendly-strip { height: 5px; border-radius: 999px; background: linear-gradient(90deg, var(--blue) 0%, var(--cyan) 100%); margin-bottom: 24px; }
+    .calendly-inline-widget {
+      border-radius: var(--r-card); overflow: hidden; background: var(--white);
+      box-shadow: 0 4px 24px rgba(10,13,20,0.10);
+    }
+
+    /* ── INFO CARDS ── */
+    .info-section {
+      padding: 56px 0 96px; border-top: 1px solid var(--gray-light);
+      background: linear-gradient(180deg, rgba(0,255,255,0.07), rgba(54,178,247,0.05));
+    }
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 760px; margin: 0 auto; }
+    .info-card {
+      background: var(--white);
+      border: 1px solid var(--gray-light);
+      border-left: 3px solid var(--blue);
+      border-radius: 0 var(--r-card) var(--r-card) 0;
+      padding: 26px 24px;
+      transition: box-shadow 200ms ease;
+    }
+    .info-card:hover { box-shadow: 0 0 0 1px rgba(54,178,247,0.10), 0 8px 24px rgba(0,0,0,0.06); }
+    .info-card-label {
+      font-family: 'Syne Mono', monospace; font-size: 10px;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--blue); display: flex; align-items: center; gap: 8px;
+      margin-bottom: 14px;
+    }
+    .info-card-label svg { width: 12px; height: 12px; flex-shrink: 0; }
+    .info-card p { font-size: 14px; font-weight: 300; line-height: 1.8; color: var(--gray-dark); }
+    .info-card p strong { color: var(--black); font-weight: 500; }
+    .info-card a { color: var(--blue); transition: opacity 200ms; }
+    .info-card a:hover { opacity: 0.8; }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: radial-gradient(ellipse 50% 100% at 0% 0%, rgba(0,255,255,0.11), transparent 65%), var(--black);
+      border-top: 1px solid rgba(255,255,255,0.06); padding: 36px 0;
+    }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+    .footer-brand { display: flex; align-items: center; gap: 10px; }
+    .footer-logo-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; font-weight: 700; color: var(--white); letter-spacing: -0.02em; }
+    .footer-copy { font-family: 'Syne Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: rgba(255,255,255,0.2); }
+
+    @media (max-width: 768px) {
+      .wrap, .calendly-shell { padding: 0 24px; }
+      .info-grid { grid-template-columns: 1fr; }
+      .page-title { font-size: 36px; }
+      .page-hero { padding: calc(var(--nav-h) + 48px) 0 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav class="nav" role="navigation" aria-label="Main">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo" aria-label="Fosseum home">
+      <img class="logo-mark" src="logo-mark.png" alt="" aria-hidden="true">
+      <span class="nav-logo-name">Fosseum</span>
+    </a>
+    <a href="index.html" class="nav-back" aria-label="Back to main site">
+      <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M7.5 2L3.5 6l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Back to site
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Book Your Strategy Call</span>
+    <h1 class="page-title">Book Your <em>1:1 Growth Session.</em></h1>
+    <p class="page-sub">Choose a time that works for you. We'll map your appointment and close-rate targets and tell you honestly whether it's a fit.</p>
+  </div>
+</section>
+
+<!-- ══════════════ CALENDLY EMBED ══════════════ -->
+<div class="calendly-section">
+  <div class="calendly-shell">
+    <div class="calendly-frame">
+      <div class="calendly-strip"></div>
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/contact-fosseum/1-1?hide_gdpr_banner=1&background_color=ffffff&text_color=0a0d14&primary_color=36b2f7"
+        style="min-width:320px;height:700px;">
+      </div>
+    </div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </div>
+</div>
+
+<!-- ══════════════ INFO CARDS ══════════════ -->
+<section class="info-section">
+  <div class="wrap">
+    <div class="info-grid">
+
+      <div class="info-card">
+        <span class="info-card-label">
+          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="0.6" y="0.6" width="10.8" height="10.8" rx="1.8" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M3 6h6M3 4h6M3 8h3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          What to expect
+        </span>
+        <p>
+          Direct questions. Real answers. We get into your business, identify what's getting in the way, and by the end of the call you'll know exactly where you stand. If there's a fit, we move forward. If there isn't, we'll tell you honestly.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <span class="info-card-label">
+          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="0.6" y="2.6" width="10.8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M0.6 5.5l5.4 3 5.4-3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          Prefer email?
+        </span>
+        <p>
+          Reach us directly at <strong><a href="mailto:contact@fosseum.com">contact@fosseum.com</a></strong>.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="logo-mark" src="logo-mark.png" alt="" aria-hidden="true">
+        <span class="footer-logo-name">Fosseum</span>
+      </div>
+      <span class="footer-copy">© 2026 Fosseum · fosseum.com</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
